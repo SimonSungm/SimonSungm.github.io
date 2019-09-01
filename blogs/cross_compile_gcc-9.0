@@ -27,8 +27,11 @@
 ### 1.download source
 
 Binutils : [Binutils website](https://www.gnu.org/software/binutils/), [the GNU main mirror](https://ftp.gnu.org/gnu/binutils/).
+
 GCC : [GCC website](https://www.gnu.org/software/gcc/), [the GNU main mirror](https://ftp.gnu.org/gnu/gcc/).
+
 Linux : [Index of /pub/linux/kernel/](https://mirrors.edge.kernel.org/pub/linux/kernel/)
+
 Glibc : [Index of /gnu/glibc/](http://mirrors.kernel.org/gnu/glibc/)
     
 ```shell
