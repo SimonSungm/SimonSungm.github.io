@@ -12,8 +12,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 Syntax highlighted code block
 
 # Blogs
-## CROSS_COMPILE GCC9.0
-[]()
+1. [CROSS_COMPILE GCC-9.0] for ARM64(SimonSungm.github.io/blogs/cross_compile_gcc-9.0)
 
 ### Header 3
 
