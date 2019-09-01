@@ -4,8 +4,8 @@ You can use the [editor on GitHub](https://github.com/SimonSungm/SimonSungm.gith
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-## 
-1. [Blogs](SimonSungm.github.io/blogs/)
+## Blogs
+1. [Cross Compile Gcc-9.1](SimonSungm.github.io/blogs/cross_compile_gcc)
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
