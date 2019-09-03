@@ -1,8 +1,15 @@
-# Enviroment
-### 1.Host Enviroment 
+---
+layout: post
+title:  "Cross Compile Gcc 9.1 for ARM64 on Ubuntu 18.04"
+description: This is a record of how I cross compile Gcc 9.1 on Ubuntu 18.04.
+date:   2019-09-3 14:30:36 +0530
+categories: Compiler 
+---
+# Environment
+### 1. Host Environment 
 
     host : Ubuntu 18.04
-    GCC version : 9.1.0
+    GCC version : 9.1.0(you may use defalut compiler of your Ubuntu)
     Binutils version : 2.3
     Glibc version : 2.27
     Bison version : 3.0.4
@@ -14,7 +21,7 @@
     CLooG version : 0.18.4
     ISL version : 0.19
 
-### 2.Target
+### 2. Target
 
     Source dir : /media/cliff/Work2/testKernel/src/
     Target dir : $HOME/opt/cross
@@ -23,8 +30,12 @@
     Linux kernel version : 5.0.1
     Glibc version : 2.30
 
+
+
 # Step
-### 1.download source
+
+### 1. Download Source
+You can download source files needed from following sites.
 
 Binutils : [Binutils website](https://www.gnu.org/software/binutils/), [the GNU main mirror](https://ftp.gnu.org/gnu/binutils/).
 
@@ -34,20 +45,15 @@ Linux : [Index of /pub/linux/kernel/](https://mirrors.edge.kernel.org/pub/linux/
 
 Glibc : [Index of /gnu/glibc/](http://mirrors.kernel.org/gnu/glibc/)
     
+
+
 ```shell
 $ cd /media/cliff/Work2/testKernel/src/
 $ ls 
     binutils-2.32   gcc-9.1   glibc-2.30    linux-5.0.1
+$ touch asan_linux-cc.patch
 ```
-
-Patching gcc before compiling glibc
-If you find that compiling glibc is problematic, or crashes every time, and it concerns 'libsantizer asan' you will need to patch gcc-9.1.0 before it will compile successfully.
-
-First, move into your 'BUILD' directory and create the patch file.
-```
-touch asan_linux-cc.patch
-```
-Next, copy the code below into the asan_linux-cc.patch file or use cat as shown below. It needs to be exact!
+Copy following codes to the patch.
 
 ```c
 --- orig/asan_linux.cc    2019-07-11 21:18:56.000000000 +0100
@@ -64,22 +70,20 @@ Next, copy the code below into the asan_linux-cc.patch file or use cat as shown 
 
  void InitializePlatformInterceptors() {}
 ```
-Check the contents of the file and verify that they look the same as shown here, including an empty line at the bottom. Then you are able to finally patch the offending file using the following command:
-
-patch -b gcc-9.1/libsanitizer/asan/asan_linux.cc asan_linux-cc.patch
-This will patch the file and create a backup [option -b] in case things don't go as planned. Now you should find that glibc compiles without any problem(s).
-
-NB: The location of the backed up file is: gcc-9.1/libsanitizer/asan/asan_linux.cc.orig
+```shell
+$ patch -b gcc-9.1/libsanitizer/asan/asan_linux.cc asan_linux-cc.patch
+```
+You can find the backed up as gcc-9.1/libsanitizer/asan/asan_linux.cc.orig
 
 
-### 2.set enviroment value
+### 2. Set Environment Values
 ```shell
 export PREFIX="$HOME/opt/cross"
 export TARGET=aarch64-linux
 export PATH="$PREFIX/bin:$PATH"
 ```
 
-### 3.build Binutils
+### 3. Build Binutils
 ```shell
 cd /media/cliff/Work2/testKernel/src/
 mkdir build-binutils
@@ -90,14 +94,14 @@ make install
 cd ..
 ```
 
-### 4.Linux Kernel headers
+### 4. Linux Kernel Headers
 ```shell
 cd linux-5.0.1
 make ARCH=arm64 INSTALL_HDR_PATH=$PREFIX/$TARGET headers_install
 cd ..
 ```
 
-### 5.build GCC
+### 5. Build Gcc
 ```shell
 mkdir -p build-gcc
 cd build-gcc
@@ -107,7 +111,7 @@ make install-gcc
 cd ..
 ```
 
-### 6.build Glibc
+### 6. Build Glibc
 ```shell
 mkdir -p build-glibc
 cd build-glibc
@@ -120,7 +124,7 @@ touch $PREFIX/$TARGET/include/gnu/stubs.h
 cd ..
 ```
 
-### 7.Compiler Support Library
+### 7. Compiler Support Library
 ```shell
 cd build-gcc
 make -j12 all-target-libgcc
@@ -128,7 +132,7 @@ make install-target-libgcc
 cd ..
 ```
 
-### 8.Standard C Library
+### 8. Standard C Library
 ```shell
 cd build-glibc
 make -j12
@@ -145,8 +149,8 @@ cd ..
 ```
 
 # Reference
-[1][https://wiki.osdev.org/GCC_Cross-Compiler](https://wiki.osdev.org/GCC_Cross-Compiler)
+[1] [https://wiki.osdev.org/GCC_Cross-Compiler](https://wiki.osdev.org/GCC_Cross-Compiler)
 
-[2][https://preshing.com/20141119/how-to-build-a-gcc-cross-compiler/](https://preshing.com/20141119/how-to-build-a-gcc-cross-compiler/)
+[2] [https://preshing.com/20141119/how-to-build-a-gcc-cross-compiler/](https://preshing.com/20141119/how-to-build-a-gcc-cross-compiler/)
 
-[3][http://docs.slackware.com/howtos:hardware:arm:gcc-9.x_aarch64_cross-compiler](http://docs.slackware.com/howtos:hardware:arm:gcc-9.x_aarch64_cross-compiler)
+[3] [http://docs.slackware.com/howtos:hardware:arm:gcc-9.x_aarch64_cross-compiler](http://docs.slackware.com/howtos:hardware:arm:gcc-9.x_aarch64_cross-compiler)
