@@ -76,7 +76,7 @@ Copy following codes to the patch.
 ```shell
 $ patch -b gcc-9.1/libsanitizer/asan/asan_linux.cc asan_linux-cc.patch
 ```
-You can find the backed up as gcc-9.1/libsanitizer/asan/asan_linux.cc.orig
+You can find the backed up file as gcc-9.1/libsanitizer/asan/asan_linux.cc.orig
 
 
 ### 2. Set Environment Values
