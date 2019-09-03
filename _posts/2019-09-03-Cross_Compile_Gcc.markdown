@@ -5,6 +5,9 @@ description: This is a record of how I cross compile Gcc 9.1 on Ubuntu 18.04.
 date:   2019-09-3 14:30:36 +0530
 categories: Compiler 
 ---
+
+This is a record of how I cross compile Gcc 9.1 on Ubuntu 18.04.
+
 # Environment
 ### 1. Host Environment 
 

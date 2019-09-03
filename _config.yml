@@ -20,8 +20,9 @@ texture:
   date_format: "%b %-d, %Y"
   style: black
   showNav: false
-  showPicker: true
-
+  showPicker: false
+  disqus_shortname: games
+  
   # generate social links in footer
   social_links:
     github:  SimonSungm
