@@ -16,6 +16,10 @@
           {{ content }}
       </div>
 
+        <!-- Configure Intensedebate -->
+      {% if site.intensedebate_comments %}
+        {% include intensedebate-comments.html %}
+      {% endif %} 
         <!-- Configure Disqus -->
       {%- if site.texture.disqus_shortname -%}
         <div id="disqus_thread" style="margin-top:25px"></div>
