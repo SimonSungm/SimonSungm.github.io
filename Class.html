@@ -1,242 +1,63 @@
-<!DOCTYPE html>
-        <html>
-        <head>
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script type="text/javascript">
- //是否显示导航栏
- var showNavBar = true;
- //是否展开导航栏
- var expandNavBar = true;
+<h2>Operating Systems: 2019 Fall/Winter</h2>
 
- $(document).ready(function(){
-    var h1s = $("body").find("h1");
-    var h2s = $("body").find("h2");
-    var h3s = $("body").find("h3");
-    var h4s = $("body").find("h4");
-    var h5s = $("body").find("h5");
-    var h6s = $("body").find("h6");
+<p>| Instructor:    | Wenbo Shen                                                   |
+| -------------- | ------------------------------------------------------------ |
+| Location:      | 玉泉校区曹光彪楼二期103                                      |
+| Meeting Times: | Monday 14:05 - 15:40, Thursday 14:05 - 15:40                 |
+| TA:            | 周金梦(科工楼 2楼, @gmail.com)&lt;br&gt;孙家栋(教9 211, simonsungm@gmail.com |
+| QQ group:      | 714702496                                                    |</p>
 
-    var headCounts = [h1s.length, h2s.length, h3s.length, h4s.length, h5s.length, h6s.length];
-    var vH1Tag = null;
-    var vH2Tag = null;
-    for(var i = 0; i < headCounts.length; i++){
-        if(headCounts[i] > 0){
-            if(vH1Tag == null){
-                vH1Tag = 'h' + (i + 1);
-            }else{
-                vH2Tag = 'h' + (i + 1);
-            }
-        }
-    }
-    if(vH1Tag == null){
-        return;
-    }
-
-    $("body").prepend('<div class="BlogAnchor">' + 
-        '<span style="color:red;position:absolute;top:-6px;left:0px;cursor:pointer;" οnclick="$(\'.BlogAnchor\').hide();">×</span>' +
-        '<p>' + 
-            '<b id="AnchorContentToggle" title="收起" style="cursor:pointer;">目录▲</b>' + 
-        '</p>' + 
-        '<div class="AnchorContent" id="AnchorContent"> </div>' + 
-    '</div>' );
-
-    var vH1Index = 0;
-    var vH2Index = 0;
-    $("body").find("h1,h2,h3,h4,h5,h6").each(function(i,item){
-        var id = '';
-        var name = '';
-        var tag = $(item).get(0).tagName.toLowerCase();
-        var className = '';
-        if(tag == vH1Tag){
-            id = name = ++vH1Index;
-            name = id;
-            vH2Index = 0;
-            className = 'item_h1';
-        }else if(tag == vH2Tag){
-            id = vH1Index + '_' + ++vH2Index;
-            name = vH1Index + '.' + vH2Index;
-            className = 'item_h2';
-        }
-        $(item).attr("id","wow"+id);
-        $(item).addClass("wow_head");
-        $("#AnchorContent").css('max-height', ($(window).height() - 180) + 'px');
-        $("#AnchorContent").append('<li><a class="nav_item '+className+' anchor-link" οnclick="return false;" href="#" link="#wow'+id+'">'+name+" · "+$(this).text()+'</a></li>');
-    });
-
-    $("#AnchorContentToggle").click(function(){
-        var text = $(this).html();
-        if(text=="目录▲"){
-            $(this).html("目录▼");
-            $(this).attr({"title":"展开"});
-        }else{
-            $(this).html("目录▲");
-            $(this).attr({"title":"收起"});
-        }
-        $("#AnchorContent").toggle();
-    });
-    $(".anchor-link").click(function(){
-        $("html,body").animate({scrollTop: $($(this).attr("link")).offset().top}, 500);
-    });
-
-    var headerNavs = $(".BlogAnchor li .nav_item");
-    var headerTops = [];
-    $(".wow_head").each(function(i, n){
-        headerTops.push($(n).offset().top);
-    });
-    $(window).scroll(function(){
-        var scrollTop = $(window).scrollTop();
-        $.each(headerTops, function(i, n){
-            var distance = n - scrollTop;
-            if(distance >= 0){
-                $(".BlogAnchor li .nav_item.current").removeClass('current');
-                $(headerNavs[i]).addClass('current');
-                return false;
-            }
-        });
-    });
-
-    if(!showNavBar){
-        $('.BlogAnchor').hide();
-    }
-    if(!expandNavBar){
-        $(this).html("目录▼");
-        $(this).attr({"title":"展开"});
-        $("#AnchorContent").hide();
-    }
- });
-</script>
-<style>
-    /*导航*/
-    .BlogAnchor {
-        background: #f1f1f1;
-        padding: 10px;
-        line-height: 180%;
-        position: fixed;
-        right: 48px;
-        top: 48px;
-        border: 1px solid #aaaaaa;
-    }
-    .BlogAnchor p {
-        font-size: 18px;
-        color: #15a230;
-        margin: 0 0 0.3rem 0;
-        text-align: right;
-    }
-    .BlogAnchor .AnchorContent {
-        padding: 5px 0px;
-        overflow: auto;
-    }
-    .BlogAnchor li{
-        text-indent: 0.5rem;
-        font-size: 14px;
-        list-style: none;
-    }
-    .BlogAnchor li .nav_item{
-        padding: 3px;
-    }
-    .BlogAnchor li .item_h1{
-        margin-left: 0rem;
-    }
-    .BlogAnchor li .item_h2{
-        margin-left: 2rem;
-        font-size: 0.8rem;
-    }
-    .BlogAnchor li .nav_item.current{
-        color: white;
-        background-color: #5cc26f;
-    }
-    #AnchorContentToggle {
-        font-size: 13px;
-        font-weight: normal;
-        color: #FFF;
-        display: inline-block;
-        line-height: 20px;
-        background: #5cc26f;
-        font-style: normal;
-        padding: 1px 8px;
-    }
-    .BlogAnchor a:hover {
-        color: #5cc26f;
-    }
-    .BlogAnchor a {
-        text-decoration: none;
-    }
-</style>
-                
-        <title>## Operating Systems: 2019 Fall/Winter</title>
-        <meta charset="utf-8" />
-        <style type="text/css">
-                html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0}body{font-family:Helvetica,arial,freesans,clean,sans-serif;font-size:14px;line-height:1.6;color:#333;background-color:#fff;padding:20px;max-width:960px;margin:0 auto}body>*:first-child{margin-top:0 !important}body>*:last-child{margin-bottom:0 !important}p,blockquote,ul,ol,dl,table,pre{margin:15px 0}h1,h2,h3,h4,h5,h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:antialiased}h1 tt,h1 code,h2 tt,h2 code,h3 tt,h3 code,h4 tt,h4 code,h5 tt,h5 code,h6 tt,h6 code{font-size:inherit}h1{font-size:28px;color:#000}h2{font-size:24px;border-bottom:1px solid #ccc;color:#000}h3{font-size:18px}h4{font-size:16px}h5{font-size:14px}h6{color:#777;font-size:14px}body>h2:first-child,body>h1:first-child,body>h1:first-child+h2,body>h3:first-child,body>h4:first-child,body>h5:first-child,body>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top:10px}a{color:#4183c4;text-decoration:none}a:hover{text-decoration:underline}ul,ol{padding-left:30px}ul li>:first-child,ol li>:first-child,ul li ul:first-of-type,ol li ol:first-of-type,ul li ol:first-of-type,ol li ul:first-of-type{margin-top:0}ul ul,ul ol,ol ol,ol ul{margin-bottom:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}pre,code,tt{font-size:12px;font-family:Consolas,"Liberation Mono",Courier,monospace}code,tt{margin:0;padding:0;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px}pre>code{margin:0;padding:0;white-space:pre;border:0;background:transparent}pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre code,pre tt{background-color:transparent;border:0}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}hr{clear:both;margin:15px 0;height:0;overflow:hidden;border:0;background:transparent;border-bottom:4px solid #ddd;padding:0}table th{font-weight:bold}table th,table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}
-        </style>
-        </head>
-        <body>
-        <h2>Operating Systems: 2019 Fall/Winter</h2>
-<table style="width: 60%; margin: 0px auto;" align="center">
-<thead>
-<tr><th>Instructor:</th><th>Wenbo Shen</th></tr>
-</thead>
-<tbody>
-<tr><td>Location:</td><td>玉泉校区曹光彪楼二期103</td></tr>
-<tr><td>Meeting Times:</td><td>Monday 14:05 - 15:40, Thursday 14:05 - 15:40</td></tr>
-<tr><td>TA:</td><td>周金梦(科工楼 2楼, @gmail.com)<br>孙家栋(教9 211, simonsungm@gmail.com</td></tr>
-<tr><td>QQ group:</td><td>714702496</td></tr>
-</tbody>
-</table>
 <h2>Syllabus</h2>
-<h4>Course Description</h4>
-<p>This course aims to give the student an understanding of what a modern operating system is, and the services it provides. Topics include CPU/memory virtualization, the concurrency problem and file systems. The basic knowledge of the computer system is required to have a better understanding of this course.</p>
-<h4>Text Books</h4>
-<p>Pre-class readings consist of book chapters and papers. Materials provided in this course should be used for educational purposes only and not be distributed without permissions.</p>
-<p>The following text books are used in this class.</p>
-<ul>
-<li>Operating System Concept</li>
-<li>边学边干：linux内核指导，第二版</li>
-</ul>
-<p>The following books are highly recommended. Some chapters of these books may be discussed in the class.</p>
-<ul>
-<li><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/">Operating Systems: Three Easy Pieces</a></li>
-<li><a href="https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468">Linux Kernel Development, 3rd Edition </a>| [<a href="https://www.amazon.cn/dp/B004X3Z3D4">Chinese Version</a>]</li>
-<li><a href="https://www.amazon.com/Guide-Kernel-Exploitation-Attacking-Core/dp/1597494860">A Guard to Kernel Exploitation: Attacking the Core</a> | [<a href="https://book.douban.com/subject/10528448/">Chinese Version</a>]</li>
-</ul>
-<h4>Grading</h4>
-<ul>
-<li>Final Exam – 50%</li>
-<li>Homework – 10%</li>
-<li>Survey/Presentation – 12%</li>
-<li>Class Quizizz – 7%</li>
-<li>Project – 21%</li>
-</ul>
-<h4>Honor Code</h4>
-<p>Students are required to follow the university honor code and guidelines on academic conduct at all times.</p>
-<p>Students should check this schedule regularly as changes may happen without separate announcements.</p>
-<h2>Schedule</h2>
-<p>-[OSC]: Operating System Concept</p>
-<p>-[OSTEP]: Operating System: Three Easy Pieces</p>
-<p>-[Linux]: 边学边干：linux内核指导，第二版</p>
-<table>
-<thead>
-<tr><th></th><th><strong>Date</strong></th><th><strong>Topic &amp; Slides</strong></th><th><strong>Readings &amp; References</strong></th><th><strong>PPT</strong></th></tr>
-</thead>
-<tbody>
-<tr><td>0x1</td><td>-</td><td>Introduction</td><td>Chapter 1 (OSC), Chapter 1,2 (OSTEP)</td><td>-</td></tr>
-<tr><td>0x2</td><td>-</td><td>OS Services &amp; System Call</td><td>Chapter 2 (OSC), Chapter 10 (Linux)</td><td>-</td></tr>
-<tr><td>0x3</td><td>-</td><td>Process, IPC</td><td>Chapter 3 (OSC), Chapter 4,5,6 (OSTEP)</td><td>-</td></tr>
-<tr><td>0x4</td><td>-</td><td>Thread</td><td>Chapter 4 (OSC)</td><td>-</td></tr>
-<tr><td>0x5</td><td>-</td><td>CPU Scheduling</td><td>Chapter 5 (OSC), Chapter 7,8,9 (OSTEP)</td><td>-</td></tr>
-<tr><td>0x6</td><td>-</td><td>Review, Synchronization</td><td>Chapter 6.1 - 6.4 (OSC)</td><td>-</td></tr>
-<tr><td>0x7</td><td>-</td><td>Synchronization</td><td>Chapter 6.5 - 6.7 (OSC)</td><td>-</td></tr>
-<tr><td>0x8</td><td>-</td><td>no class</td><td>no class</td><td>-</td></tr>
-<tr><td>0x9</td><td>-</td><td>Synchronization Examples, Deadlock</td><td>Chapter 8 (OSC)</td><td>-</td></tr>
-<tr><td>0xa</td><td>-</td><td>Main Memory</td><td>Chapter 9.1 - 9.7 (OSC) Chapter 13-23 (OSTEP)</td><td>-</td></tr>
-<tr><td>0xb</td><td>-</td><td>Main Memory</td><td>Format String Vulnerability Chapter 10.1 - 10.3 (OSC)</td><td>-</td></tr>
-<tr><td>0xc</td><td>-</td><td>Main Memory</td><td>Chapter 10.4 - 10.11(OSC)</td><td>-</td></tr>
-<tr><td>0xd</td><td>-</td><td>File-System Interface</td><td>Chapter 13(OSC), Chapter 39 (OSTEP)</td><td>-</td></tr>
-<tr><td>0xe</td><td>-</td><td>File-System Implementation</td><td>Chapter 14(OSC), Chapter 40 (OSTEP)</td><td>-</td></tr>
-<tr><td>0xf</td><td>-</td><td>Mass-Storage Structure, I/O System</td><td>Chapter 11, 12(OSC)</td><td>-</td></tr>
-<tr><td>0x10</td><td>-</td><td>Review</td><td></td><td></td></tr>
-</tbody>
-</table>
 
-        <!-- Use style in style1-->
-        </body>
-        </html>
+<h4>Course Description</h4>
+
+<p>This course aims to give the student an understanding of what a modern operating system is, and the services it provides. Topics include CPU/memory virtualization, the concurrency problem and file systems. The basic knowledge of the computer system is required to have a better understanding of this course.</p>
+
+<h4>Text Books</h4>
+
+<p>Pre-class readings consist of book chapters and papers. Materials provided in this course should be used for educational purposes only and not be distributed without permissions.</p>
+
+<p>The following text books are used in this class.</p>
+
+<ul><li>Operating System Concept</li><li>边学边干：linux内核指导，第二版</li></ul>
+
+<p>The following books are highly recommended. Some chapters of these books may be discussed in the class.</p>
+
+<ul><li><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/">Operating Systems: Three Easy Pieces</a></li><li><a href="https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468">Linux Kernel Development, 3rd Edition </a>| [<a href="https://www.amazon.cn/dp/B004X3Z3D4">Chinese Version</a>]</li><li><a href="https://www.amazon.com/Guide-Kernel-Exploitation-Attacking-Core/dp/1597494860">A Guard to Kernel Exploitation: Attacking the Core</a> | [<a href="https://book.douban.com/subject/10528448/">Chinese Version</a>]</li></ul>
+
+<h4>Grading</h4>
+
+<ul><li>Final Exam – 50%</li><li>Homework – 10%</li><li>Survey/Presentation – 12%</li><li>Class Quizizz – 7%</li><li>Project – 21%</li></ul>
+
+<h4>Honor Code</h4>
+
+<p>Students are required to follow the university honor code and guidelines on academic conduct at all times.</p>
+
+<p>Students should check this schedule regularly as changes may happen without separate announcements.</p>
+
+<h2>Schedule</h2>
+
+<p>[OSC] : Operating System Concept</p>
+
+<p>[OSTEP] : Operating System: Three Easy Pieces</p>
+
+<p>[Linux] : 边学边干：linux内核指导，第二版</p>
+
+<p>|      | <strong>Date</strong> | <strong>Topic &amp; Slides</strong>                 | <strong>Readings &amp; References</strong>                             | <strong>PPT</strong> |
+| ---- | -------- | ---------------------------------- | ----------------------------------------------------- | ------- |
+| 0x1  | -        | Introduction                       | Chapter 1 (OSC), Chapter 1,2 (OSTEP)                  | -       |
+| 0x2  | -        | OS Services &amp; System Call          | Chapter 2 (OSC), Chapter 10 (Linux)                   | -       |
+| 0x3  | -        | Process, IPC                       | Chapter 3 (OSC), Chapter 4,5,6 (OSTEP)                | -       |
+| 0x4  | -        | Thread                             | Chapter 4 (OSC)                                       | -       |
+| 0x5  | -        | CPU Scheduling                     | Chapter 5 (OSC), Chapter 7,8,9 (OSTEP)                | -       |
+| 0x6  | -        | Review, Synchronization            | Chapter 6.1 - 6.4 (OSC)                               | -       |
+| 0x7  | -        | Synchronization                    | Chapter 6.5 - 6.7 (OSC)                               | -       |
+| 0x8  | -        | no class                           | no class                                              | -       |
+| 0x9  | -        | Synchronization Examples, Deadlock | Chapter 8 (OSC)                                       | -       |
+| 0xa  | -        | Main Memory                        | Chapter 9.1 - 9.7 (OSC) Chapter 13-23 (OSTEP)         | -       |
+| 0xb  | -        | Main Memory                        | Format String Vulnerability Chapter 10.1 - 10.3 (OSC) | -       |
+| 0xc  | -        | Main Memory                        | Chapter 10.4 - 10.11(OSC)                             | -       |
+| 0xd  | -        | File-System Interface              | Chapter 13(OSC), Chapter 39 (OSTEP)                   | -       |
+| 0xe  | -        | File-System Implementation         | Chapter 14(OSC), Chapter 40 (OSTEP)                   | -       |
+| 0xf  | -        | Mass-Storage Structure, I/O System | Chapter 11, 12(OSC)                                   | -       |
+| 0x10 | -        | Review                             |                                                       |         |</p>
