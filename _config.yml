@@ -21,7 +21,7 @@ texture:
   tagline: Developer. System Security
   date_format: "%b %-d, %Y"
   style: black
-  showNav: yes
+  showNav: true
   showPicker: false
   #disqus_shortname: simonsungm
   
