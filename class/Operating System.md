@@ -21,7 +21,7 @@ Pre-class readings consist of book chapters and papers. Materials provided in th
 
 The following text books are used in this class.
 
-- Operating System Concept
+- Operating System Concepts
 - 边学边干：linux内核指导，第二版
 
 The following books are highly recommended. Some chapters of these books may be discussed in the class.
@@ -32,11 +32,18 @@ The following books are highly recommended. Some chapters of these books may be 
 
 #### Grading
 
+#####Regular Track
 - Final Exam – 50%
 - Homework – 10%
 - Survey/Presentation – 12%
 - Class Quizizz – 7%
 - Project – 21%
+
+#####Advanced Track
+- Final Exam – 50%
+- Homework – 10%
+- Project – 40%
+
 
 #### Honor Code
 
