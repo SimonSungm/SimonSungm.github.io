@@ -61,7 +61,7 @@ Students should check this schedule regularly as changes may happen without sepa
 
 |      | **Date** | **Topic & Slides**                 | **Readings & References**                             | **PPT** |
 | ---- | -------- | ---------------------------------- | ----------------------------------------------------- | ------- |
-| 0x1  | -        | Introduction                       | Chapter 1 (OSC), Chapter 1,2 (OSTEP)                  | -       |
+| 0x1  | -        | Introduction                       | Chapter 1 (OSC), Chapter 1,2 (OSTEP)                  | [0](simonsungm.github.io/class/ppt/0_course_syllabus.pdf) [1](simonsungm.github.io/class/ppt/01_computerarchitecture.pdf)      |
 | 0x2  | -        | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux)                   | -       |
 | 0x3  | -        | Process, IPC                       | Chapter 3 (OSC), Chapter 4,5,6 (OSTEP)                | -       |
 | 0x4  | -        | Thread                             | Chapter 4 (OSC)                                       | -       |
