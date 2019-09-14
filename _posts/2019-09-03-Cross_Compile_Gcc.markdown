@@ -38,7 +38,7 @@ This is a record of how I cross compile Gcc 9.1 on Ubuntu 18.04.
 # Step
 
 ### 1. Download Source
-You can download source files needed from following sites.
+You can download source files from following sites.
 
 Binutils : [Binutils website](https://www.gnu.org/software/binutils/), [the GNU main mirror](https://ftp.gnu.org/gnu/binutils/).
 
@@ -56,7 +56,7 @@ $ ls
     binutils-2.32   gcc-9.1   glibc-2.30    linux-5.0.1
 $ touch asan_linux-cc.patch
 ```
-Copy following codes to the patch.
+Copy following code to the patch.
 
 ```c
 --- orig/asan_linux.cc    2019-07-11 21:18:56.000000000 +0100
