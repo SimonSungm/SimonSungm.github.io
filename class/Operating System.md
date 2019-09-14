@@ -32,14 +32,14 @@ The following books are highly recommended. Some chapters of these books may be 
 
 #### Grading
 
-#####Regular Track
+##### Regular Track
 - Final Exam – 50%
 - Homework – 10%
 - Survey/Presentation – 12%
 - Class Quizizz – 7%
 - Project – 21%
 
-#####Advanced Track
+##### Advanced Track
 - Final Exam – 50%
 - Homework – 10%
 - Project – 40%
