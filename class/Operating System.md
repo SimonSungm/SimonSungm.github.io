@@ -4,7 +4,7 @@
 | -------------- | ------------------------------------------------------------ |
 | Location:      | 玉泉校区曹光彪楼二期103                                      |
 | Meeting Times: | Monday 14:05 - 15:40, Thursday 14:05 - 15:40                 |
-| TA:            | 周金梦(科工楼 2楼, zhoujinmeng@foxmail.com)<br>孙家栋(教9 211, simonsungm@gmail.com) |
+| TA:            | 周金梦(科工楼 210, jinmengzhou@foxmail.com)<br>孙家栋(教9 211, simonsungm@gmail.com) |
 | QQ group:      | 714702496                                                    |
 
 
