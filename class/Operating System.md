@@ -56,25 +56,25 @@ Students are required to follow the university honor code and guidelines on acad
 Students should check this schedule regularly as changes may happen without separate announcements.
 	
 [OSC] : Operating System Concept
-[OSTEP] : Operating System: Three Easy Pieces
+[OSH] : Operating System History
 [Linux] : 边学边干：linux内核指导，第二版
 
 |      | **Date** | **Topic & Slides**                 | **Readings & References**                             | **PPT** |
 | ---- | -------- | ---------------------------------- | ----------------------------------------------------- | ------- |
-| 0x1  | 9.12        | Introduction                       | Chapter 1 (OSC), Chapter 1,2 (OSTEP)                  | [0](https://simonsungm.github.io/class/ppt/0_course_syllabus.pdf) [1](https://simonsungm.github.io/class/ppt/01_computerarchitecture.pdf)      |
-| 0x2  | -        | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux)                   | -       |
-| 0x3  | -        | Process, IPC                       | Chapter 3 (OSC), Chapter 4,5,6 (OSTEP)                | -       |
+| 0x1  | 9.12        | Introduction                       | Chapter 1 (OSC)                  | [0](https://simonsungm.github.io/class/ppt/0_course_syllabus.pdf) [1](https://simonsungm.github.io/class/ppt/01_computerarchitecture.pdf)      |
+| 0x2  | -        | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux), [OSH](https://cloud.tencent.com/developer/article/1464402)             | -       |
+| 0x3  | -        | Process, IPC                       | Chapter 3 (OSC)                | -       |
 | 0x4  | -        | Thread                             | Chapter 4 (OSC)                                       | -       |
-| 0x5  | -        | CPU Scheduling                     | Chapter 5 (OSC), Chapter 7,8,9 (OSTEP)                | -       |
+| 0x5  | -        | CPU Scheduling                     | Chapter 5 (OSC),                | -       |
 | 0x6  | -        | Review, Synchronization            | Chapter 6.1 - 6.4 (OSC)                               | -       |
 | 0x7  | -        | Synchronization                    | Chapter 6.5 - 6.7 (OSC)                               | -       |
 | 0x8  | -        | no class                           | no class                                              | -       |
 | 0x9  | -        | Synchronization Examples, Deadlock | Chapter 8 (OSC)                                       | -       |
-| 0xa  | -        | Main Memory                        | Chapter 9.1 - 9.7 (OSC) Chapter 13-23 (OSTEP)         | -       |
+| 0xa  | -        | Main Memory                        | Chapter 9.1 - 9.7 (OSC)         | -       |
 | 0xb  | -        | Main Memory                        | Format String Vulnerability Chapter 10.1 - 10.3 (OSC) | -       |
 | 0xc  | -        | Main Memory                        | Chapter 10.4 - 10.11(OSC)                             | -       |
-| 0xd  | -        | File-System Interface              | Chapter 13(OSC), Chapter 39 (OSTEP)                   | -       |
-| 0xe  | -        | File-System Implementation         | Chapter 14(OSC), Chapter 40 (OSTEP)                   | -       |
+| 0xd  | -        | File-System Interface              | Chapter 13(OSC)                   | -       |
+| 0xe  | -        | File-System Implementation         | Chapter 14(OSC)                   | -       |
 | 0xf  | -        | Mass-Storage Structure, I/O System | Chapter 11, 12(OSC)                                   | -       |
 | 0x10 | -        | Review                             |                                                       |         |
 
