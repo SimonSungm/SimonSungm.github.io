@@ -44,6 +44,8 @@ The following books are highly recommended. Some chapters of these books may be 
 - Homework – 10%
 - Project – 40%
 
+#### Homework&Project
+Homework and project will be published on [学在浙里](c.zju.edu.cn).
 
 #### Honor Code
 
