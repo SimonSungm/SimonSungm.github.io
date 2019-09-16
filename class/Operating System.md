@@ -21,7 +21,7 @@ Pre-class readings consist of book chapters and papers. Materials provided in th
 
 The following text books are used in this class.
 
-- Operating System Concepts
+- Operating System Concepts, 10th edition
 - 边学边干：linux内核指导，第二版
 
 The following books are highly recommended. Some chapters of these books may be discussed in the class.
@@ -57,13 +57,13 @@ Students are required to follow the university honor code and guidelines on acad
 
 Students should check this schedule regularly as changes may happen without separate announcements.
 	
-[OSC] : Operating System Concept
+[OSC] : Operating System Concept, 10th edition
 [Linux] : 边学边干：linux内核指导，第二版
 
 |      | **Date** | **Topic & Slides**                 | **Readings & References**                             | **PPT** |
 | ---- | -------- | ---------------------------------- | ----------------------------------------------------- | ------- |
 | 0x1  | 9.12        | Introduction                       | Chapter 1 (OSC)                  | [0](https://simonsungm.github.io/class/ppt/0_course_syllabus.pdf) [1](https://simonsungm.github.io/class/ppt/01_computerarchitecture.pdf)      |
-| 0x2  | -        | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux), [OS History](https://cloud.tencent.com/developer/article/1464402)    | -       |
+| 0x2  | 9.16     | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux), [OS History](https://cloud.tencent.com/developer/article/1464402)    | -       |
 | 0x3  | -        | Process, IPC                       | Chapter 3 (OSC)                | -       |
 | 0x4  | -        | Thread                             | Chapter 4 (OSC)                                       | -       |
 | 0x5  | -        | CPU Scheduling                     | Chapter 5 (OSC),                | -       |
