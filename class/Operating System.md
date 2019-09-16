@@ -57,7 +57,7 @@ Students are required to follow the university honor code and guidelines on acad
 
 Students should check this schedule regularly as changes may happen without separate announcements.
 	
-[OSC] : Operating System Concept, 10th edition
+[OSC] : Operating System Concepts, 10th edition
 [Linux] : 边学边干：linux内核指导，第二版
 
 |      | **Date** | **Topic & Slides**                 | **Readings & References**                             | **PPT** |
