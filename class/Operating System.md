@@ -62,8 +62,8 @@ Students should check this schedule regularly as changes may happen without sepa
 
 |      | **Date** | **Topic & Slides**                 | **Readings & References**                             | **PPT** |
 | ---- | -------- | ---------------------------------- | ----------------------------------------------------- | ------- |
-| 0x1  | 9.12        | Introduction                       | Chapter 1 (OSC)                  | [0](https://simonsungm.github.io/class/ppt/0_course_syllabus.pdf) [1](https://simonsungm.github.io/class/ppt/01_computerarchitecture.pdf)      |
-| 0x2  | 9.16     | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux), [OS History](https://cloud.tencent.com/developer/article/1464402)    | [2](https://simonsungm.github.io/class/ppt/02_overview.pdf)   |
+| 0x1  | 9.12，9.16         | Introduction                       | Chapter 1 (OSC), [OS History](https://cloud.tencent.com/developer/article/1464402) | [0](https://simonsungm.github.io/class/ppt/0_course_syllabus.pdf) [1 ](https://simonsungm.github.io/class/ppt/01_computerarchitecture.pdf) [2](https://simonsungm.github.io/class/ppt/02_overview.pdf) |
+| 0x2  | -    | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux)    |    |
 | 0x3  | -        | Process, IPC                       | Chapter 3 (OSC)                | -       |
 | 0x4  | -        | Thread                             | Chapter 4 (OSC)                                       | -       |
 | 0x5  | -        | CPU Scheduling                     | Chapter 5 (OSC),                | -       |
