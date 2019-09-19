@@ -10,9 +10,9 @@ Recently, my instructor decided to update the project of operating system course
 
 
 
-## Install GNU toolchain for RISC-V
+# Install GNU toolchain for RISC-V
 
-### Download source code of riscv-gnu-toochain
+## Download source code of riscv-gnu-toochain
 ```shell
 $ mkdir ~/Documents/linux4riscv
 $ cd ~/Documents/linux4riscv
@@ -23,12 +23,12 @@ It may be too slow (50 KB/s) and too many problems(I downloaded it for a day, �
 
 **If you choose to download prebuilt compiler,  you can skip these three steps and go ahead to step Test our Installation**.
 
-### Prerequisites
+## Prerequisites
 
 ```shell
 $ sudo apt-get install autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev
 ```
-### Installation (Newlib)
+## Installation (Newlib)
 
 ```shell
 $ ./configure --prefix=/home/cliff/opt/riscv
@@ -37,7 +37,7 @@ $ make
 
 Here we use /home/cliff/opt/riscv as default path of our toolchain. You can modify it as you like. It needs about 8GB spare space and take a long time to compile. So I have upload the binary onto [浙大云盘](https://pan.zju.edu.cn/share/ad165bddc1b4cce7dbaa9d089e) to reduce your workload.
 
-### Installation (Linux)
+## Installation (Linux)
 
 **note:** this step is not necessary as we need to write our own operating system rather than just run program on the Linux. You can just skip this step. 
 
@@ -46,7 +46,7 @@ $ ./configure --prefix=/home/cliff/opt/riscv
 $ make linux
 ```
 
-### Test our Installation
+## Test our Installation
 
 Well, this step is absolutely not fun since you have to install a series of libraries, and you will get a lot of error when you install these libraries. Unfortunately, since we want to use qemu to test our to be built kernel, this step (it will build qemu for RISC-V) can not be skipped. **But** **you can just stop when you successfully build qemu-riscv64**. Have fun : ).
 
