@@ -21,7 +21,7 @@ $ cd riscv-gnu-toolchain
 ```
 It may be too slow (50 KB/s) and too many problems(I downloaded it for a day, 我佛了), so I have uploaded it onto [浙大云盘](https://pan.zju.edu.cn/share/ad165bddc1b4cce7dbaa9d089e) (Only ZJU students are allowed).
 
-**If you choose to download prebuilt compiler,  you can skip these three steps and go ahead to step Test our installation**.
+**If you choose to download prebuilt compiler,  you can skip these three steps and go ahead to step Build qemu.
 
 ## Prerequisites
 
