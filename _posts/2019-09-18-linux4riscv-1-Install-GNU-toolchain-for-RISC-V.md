@@ -35,7 +35,7 @@ $ ./configure --prefix=/home/cliff/opt/riscv
 $ make
 ```
 
-Here we use /home/cliff/opt/riscv as default path of our toolchain. You can modify it as you like. It needs about 8GB spare space and take a long time to compile. So I have upload the binary onto [浙大云盘](https://pan.zju.edu.cn/share/ad165bddc1b4cce7dbaa9d089e) to reduce your workload.
+Here we use /home/cliff/opt/riscv as default path of our toolchain. You can modify it as you like. It needs about 8GB spare space and take a long time to compile. So I have upload the binary onto [浙大云盘](https://pan.zju.edu.cn/share/ad165bddc1b4cce7dbaa9d089e) to reduce your workload. Now we can use riscv-unknow-elf-gcc to compile programs for RISC-V.
 
 ## Installation (Linux)
 
@@ -46,26 +46,25 @@ $ ./configure --prefix=/home/cliff/opt/riscv
 $ make linux
 ```
 
-## Test our installation
+We can find the compiler named riscv64-unknown-linux-gnu-gcc.
 
-Well, this step is absolutely not fun since you have to install a series of libraries, and you will get a lot of error when you install these libraries. Unfortunately, since we want to use qemu to test our to be built kernel, this step (it will build qemu for RISC-V) can not be skipped. **But** **you can just stop when you successfully build qemu-riscv64**. Have fun : ).
+## Build qemu
 
-**Tips :** You can find related library package name you need use **sudo apt-cache search package-name** and then use **sudo apt install package-name**. For example, if you type sudo apt-cache search gcc, then you will get a series of package with a string of gcc in its name.
-
-```shell
-$ ./configure --prefix=$RISCV --disable-linux --with-arch=rv64ima # or --with-arch=rv32ima
-$ make newlib
-$ make report-newlib
-```
-
-You can skip the following step is you do not do  step Installation(Linux)
+**Tips :** In this step, you may need to install some library. You can find related library package name you need use **sudo apt-cache search package-name** and then use **sudo apt install package-name**. For example, if you type sudo apt-cache search gcc, then you will get a series of package with a string of gcc in its name.
 
 ```shell
-$ ./configure --prefix=$RISCV
-$ make linux
-$ make report-linux
+$ cd qemu
+$ ./configure --target-list=riscv64-softmmu && make
+$ make install
 ```
-If you get the following output, congratulations! I was going to say it, but I failed after I successfully built qemu. So forget it, or you can confirm it by yourself. 
+
+If you get the following output, congratulations! I 
+
+```shell
+$ qemu-system-riscv64 -version
+QEMU emulator version 4.0.50 (v4.0.0-1854-g57dfc2c4d5-dirty)
+Copyright (c) 2003-2019 Fabrice Bellard and the QEMU Project developers
+```
 
 
 
@@ -73,3 +72,4 @@ If you get the following output, congratulations! I was going to say it, but I f
 
 [1] [RISC-V GNU Compiler Toolchain](https://github.com/riscv/riscv-gnu-toolchain#risc-v-gnu-compiler-toolchain)
 
+[2] [Wiki.qemu](https://wiki.qemu.org/Documentation/Platforms/RISCV)
