@@ -66,7 +66,7 @@ QEMU emulator version 4.0.50 (v4.0.0-1854-g57dfc2c4d5-dirty)
 Copyright (c) 2003-2019 Fabrice Bellard and the QEMU Project developers
 ```
 
-You can also download source file from [qemu.org]([https://www.qemu.org](https://www.qemu.org/)) and build it by yourself.
+You can also download source file from [qemu.org](https://www.qemu.org/) and build it by yourself.
 
 
 
