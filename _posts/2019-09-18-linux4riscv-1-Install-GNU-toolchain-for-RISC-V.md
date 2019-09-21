@@ -58,7 +58,7 @@ $ ./configure --target-list=riscv64-softmmu && make
 $ make install
 ```
 
-If you get the following output, congratulations! I 
+If you get the following output, congratulations!
 
 ```shell
 $ qemu-system-riscv64 -version
