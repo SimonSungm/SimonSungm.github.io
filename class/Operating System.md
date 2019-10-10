@@ -60,22 +60,22 @@ Students should check this schedule regularly as changes may happen without sepa
 [OSC] : Operating System Concepts, 10th edition
 [Linux] : 边学边干：linux内核指导，第二版
 
-|      | **Date** | **Topic & Slides**                 | **Readings & References**                             | **PPT** |
-| ---- | -------- | ---------------------------------- | ----------------------------------------------------- | ------- |
-| 0x1  | 9.12,9.16        | Introduction                       | Chapter 1 (OSC), [OS History](https://cloud.tencent.com/developer/article/1464402) | [0](https://simonsungm.github.io/class/ppt/0_course_syllabus.pdf) [1 ](https://simonsungm.github.io/class/ppt/01_computerarchitecture.pdf) [2](https://simonsungm.github.io/class/ppt/02_overview.pdf) |
-| 0x2  | 9.19 | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux)    | [3](https://simonsungm.github.io/class/ppt/03_structures-dino.pdf) |
-| 0x3  | 9.23,9.26,9.30 | Process, IPC                       | Chapter 3 (OSC)                | [4](https://simonsungm.github.io/class/ppt/04_processes.pdf) [5](https://simonsungm.github.io/class/ppt/05_ipc.pdf) |
-| 0x4  | -        | Thread                             | Chapter 4 (OSC)                                       | -       |
-| 0x5  | -        | CPU Scheduling                     | Chapter 5 (OSC),                | -       |
-| 0x6  | -        | Review, Synchronization            | Chapter 6.1 - 6.4 (OSC)                               | -       |
-| 0x7  | -        | Synchronization                    | Chapter 6.5 - 6.7 (OSC)                               | -       |
-| 0x8  | -        | no class                           | no class                                              | -       |
-| 0x9  | -        | Synchronization Examples, Deadlock | Chapter 8 (OSC)                                       | -       |
-| 0xa  | -        | Main Memory                        | Chapter 9.1 - 9.7 (OSC)         | -       |
-| 0xb  | -        | Main Memory                        | Format String Vulnerability Chapter 10.1 - 10.3 (OSC) | -       |
-| 0xc  | -        | Main Memory                        | Chapter 10.4 - 10.11(OSC)                             | -       |
-| 0xd  | -        | File-System Interface              | Chapter 13(OSC)                   | -       |
-| 0xe  | -        | File-System Implementation         | Chapter 14(OSC)                   | -       |
-| 0xf  | -        | Mass-Storage Structure, I/O System | Chapter 11, 12(OSC)                                   | -       |
-| 0x10 | -        | Review                             |                                                       |         |
+|      | **Date** | **Topic & Slides**                 | **Readings & References**                             | Code | **PPT** |
+| ---- | -------- | ---------------------------------- | ----------------------------------------------------- | :-----: | ------- |
+| 0x1  | 9.12,9.16        | Introduction                       | Chapter 1 (OSC), [OS History](https://cloud.tencent.com/developer/article/1464402) | - | [0](https://simonsungm.github.io/class/ppt/0_course_syllabus.pdf) [1 ](https://simonsungm.github.io/class/ppt/01_computerarchitecture.pdf) [2](https://simonsungm.github.io/class/ppt/02_overview.pdf) |
+| 0x2  | 9.19 | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux)    | - | [3](https://simonsungm.github.io/class/ppt/03_structures-dino.pdf) |
+| 0x3  | 9.23,9.26,9.30 | Process, IPC                       | Chapter 3 (OSC)                | [Process](https://simonsungm.github.io/class/code/Process.zip) [IPC](https://simonsungm.github.io/class/code/IPC.zip) | [4](https://simonsungm.github.io/class/ppt/04_processes.pdf) [5](https://simonsungm.github.io/class/ppt/05_ipc.pdf) |
+| 0x4  | 10.10   | Thread                             | Chapter 4 (OSC)                                       |  | [6](https://simonsungm.github.io/class/ppt/06_thread.pdf) |
+| 0x5  | 10.12   | CPU Scheduling                     | Chapter 5 (OSC),                |  | [7](https://simonsungm.github.io/class/ppt/07_scheduling.pdf) |
+| 0x6  | -        | Review, Synchronization            | Chapter 6.1 - 6.4 (OSC)                               |        | -       |
+| 0x7  | -        | Synchronization                    | Chapter 6.5 - 6.7 (OSC)                               |        | -       |
+| 0x8  | -        | no class                           | no class                                              |        | -       |
+| 0x9  | -        | Synchronization Examples, Deadlock | Chapter 8 (OSC)                                       |        | -       |
+| 0xa  | -        | Main Memory                        | Chapter 9.1 - 9.7 (OSC)         |        | -       |
+| 0xb  | -        | Main Memory                        | Format String Vulnerability Chapter 10.1 - 10.3 (OSC) |        | -       |
+| 0xc  | -        | Main Memory                        | Chapter 10.4 - 10.11(OSC)                             |        | -       |
+| 0xd  | -        | File-System Interface              | Chapter 13(OSC)                   |        | -       |
+| 0xe  | -        | File-System Implementation         | Chapter 14(OSC)                   |        | -       |
+| 0xf  | -        | Mass-Storage Structure, I/O System | Chapter 11, 12(OSC)                                   |        | -       |
+| 0x10 | -        | Review                             |                                                       |         |         |
 
