@@ -67,8 +67,8 @@ Students should check this schedule regularly as changes may happen without sepa
 | 0x3  | 9.23,9.26,9.30 | Process, IPC                       | Chapter 3 (OSC)                | [Process](https://simonsungm.github.io/class/code/Process.zip) [IPC](https://simonsungm.github.io/class/code/IPC.zip) | [4](https://simonsungm.github.io/class/ppt/04_processes.pdf) [5](https://simonsungm.github.io/class/ppt/05_ipc.pdf) |
 | 0x4  | 10.10   | Thread                             | Chapter 4 (OSC)                                       |  | [6](https://simonsungm.github.io/class/ppt/06_thread.pdf) |
 | 0x5  | 10.12   | CPU Scheduling                     | Chapter 5 (OSC),                |  | [7](https://simonsungm.github.io/class/ppt/07_scheduling.pdf) |
-| 0x6  | -        | Review, Synchronization            | Chapter 6.1 - 6.4 (OSC)                               |        | -       |
-| 0x7  | -        | Synchronization                    | Chapter 6.5 - 6.7 (OSC)                               |        | -       |
+| 0x6  | 10.14 | Review, Synchronization            | Chapter 6.1 - 6.4 (OSC)                               |        | [8](https://simonsungm.github.io/class/ppt/08_mars.pdf) |
+| 0x7  | 10.17  | Synchronization                    | Chapter 6.5 - 6.7 (OSC)                               |        | [8](https://simonsungm.github.io/class/ppt/08_synchronization.pdf) |
 | 0x8  | -        | no class                           | no class                                              |        | -       |
 | 0x9  | -        | Synchronization Examples, Deadlock | Chapter 8 (OSC)                                       |        | -       |
 | 0xa  | -        | Main Memory                        | Chapter 9.1 - 9.7 (OSC)         |        | -       |
