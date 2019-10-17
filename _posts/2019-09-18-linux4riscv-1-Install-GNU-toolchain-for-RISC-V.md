@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "linux4riscv-1: Install GNU toolchain for RISC-V"
+categories: Linux-for-RISC-V Operating-System-Lab
 description: Record of how to install GNU toolchain for RISC-V
-date:   2019-09-18 15:15:36 +0530
-categories: Linux-for-RISC-V 
+keywords: RISC-V, Opeating-System-Lab, GNU-Toolchain
+
 ---
 
 Recently, my instructor decided to update the project of operating system course. The new project is about porting Linux 0.11 to ARM64 and RISC-V as well as rewriting its interrupt, memory management, and file system, etc. My task is on RISC-V and I have no knowledge about it before, so I am to record what I have done and what I have learned. This is the first blog of this series. However, the source code will not be open-sourced as it will be used in operating system teaching in the future. Anyway, it's a big project and hopefully I can finish it before the final exam.
