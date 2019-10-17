@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cross Compile Gcc 9.1 for ARM64 on Ubuntu 18.04"
-categories: [cate1, cate2]
+categories: [ARM64, Cross Compiler]
 description: This is a record of how I cross compile Gcc 9.1 on Ubuntu 18.04.
 keywords: ARM64, Cross Compiler
 ---
