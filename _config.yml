@@ -103,7 +103,7 @@ comments_provider: gitalk
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: SimonSungm
-    repo: blog-comments
+    repo: blogtalk
     clientID: 122da303c62679712930
     clientSecret: 3ed7375f80fe7cd44bbf16161b1015ced21154ed
 # 在使用其它评论组件时可点击显示 Disqus
