@@ -1,6 +1,5 @@
 - name: Operating System
   keywords:
-      - Page Table
-      - riscv4linux
-      - Cross Compiler
+      - Linux
+      - RISC-V
 

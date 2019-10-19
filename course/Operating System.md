@@ -1,3 +1,10 @@
+---
+layout: post
+title: Operating Systems: 2019 Fall/Winter
+categories: [course]
+description: Operating Systems: 2019 Fall/Winter
+---
+
 # Operating Systems: 2019 Fall/Winter
 
 | Instructor:    | Wenbo Shen                                                   |
@@ -62,12 +69,12 @@ Students should check this schedule regularly as changes may happen without sepa
 
 |      | **Date** | **Topic & Slides**                 | **Readings & References**                             | Code | **PPT** |
 | ---- | -------- | ---------------------------------- | ----------------------------------------------------- | :-----: | ------- |
-| 0x1  | 9.12,9.16        | Introduction                       | Chapter 1 (OSC), [OS History](https://cloud.tencent.com/developer/article/1464402) | - | [0](https://simonsungm.github.io/class/ppt/0_course_syllabus.pdf) [1 ](https://simonsungm.github.io/class/ppt/01_computerarchitecture.pdf) [2](https://simonsungm.github.io/class/ppt/02_overview.pdf) |
-| 0x2  | 9.19 | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux)    | - | [3](https://simonsungm.github.io/class/ppt/03_structures-dino.pdf) |
-| 0x3  | 9.23,9.26,9.30 | Process, IPC                       | Chapter 3 (OSC)                | [Process](https://simonsungm.github.io/class/code/Process.zip) [IPC](https://simonsungm.github.io/class/code/IPC.zip) | [4](https://simonsungm.github.io/class/ppt/04_processes.pdf) [5](https://simonsungm.github.io/class/ppt/05_ipc.pdf) |
-| 0x4  | 10.10   | Thread                             | Chapter 4 (OSC)                                       |  | [6](https://simonsungm.github.io/class/ppt/06_thread.pdf) |
-| 0x5  | 10.12   | CPU Scheduling                     | Chapter 5 (OSC),                |  | [7](https://simonsungm.github.io/class/ppt/07_scheduling.pdf) |
-| 0x6  | 10.14, 10.17 | Review, Synchronization            | Chapter 6.1 - 6.7 (OSC)                              |        | [8-1 ](https://simonsungm.github.io/class/ppt/08_mars.pdf)[8-2](https://simonsungm.github.io/class/ppt/08_synchronization.pdf) |
+| 0x1  | 9.12,9.16        | Introduction                       | Chapter 1 (OSC), [OS History](https://cloud.tencent.com/developer/article/1464402) | - | [0](https://simonsungm.github.io/course/ppt/0_course_syllabus.pdf) [1 ](https://simonsungm.github.io/course/ppt/01_computerarchitecture.pdf) [2](https://simonsungm.github.io/course/ppt/02_overview.pdf) |
+| 0x2  | 9.19 | OS Services & System Call          | Chapter 2 (OSC), Chapter 10 (Linux)    | - | [3](https://simonsungm.github.io/course/ppt/03_structures-dino.pdf) |
+| 0x3  | 9.23,9.26,9.30 | Process, IPC                       | Chapter 3 (OSC)                | [Process](https://simonsungm.github.io/course/code/Process.zip) [IPC](https://simonsungm.github.io/course/code/IPC.zip) | [4](https://simonsungm.github.io/course/ppt/04_processes.pdf) [5](https://simonsungm.github.io/course/ppt/05_ipc.pdf) |
+| 0x4  | 10.10   | Thread                             | Chapter 4 (OSC)                                       |  | [6](https://simonsungm.github.io/course/ppt/06_thread.pdf) |
+| 0x5  | 10.12   | CPU Scheduling                     | Chapter 5 (OSC),                |  | [7](https://simonsungm.github.io/course/ppt/07_scheduling.pdf) |
+| 0x6  | 10.14, 10.17 | Review, Synchronization            | Chapter 6.1 - 6.7 (OSC)                              |        | [8-1 ](https://simonsungm.github.io/course/ppt/08_mars.pdf)[8-2](https://simonsungm.github.io/course/ppt/08_synchronization.pdf) |
 | 0x7 | -        | -                        | -                                             |        | -       |
 | 0x8 | -        | Synchronization Examples, Deadlock | Chapter 8 (OSC)                                       |        | -       |
 | 0x9 | -        | Main Memory                        | Chapter 9.1 - 9.7 (OSC)         |        | -       |

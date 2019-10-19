@@ -1,7 +1,9 @@
 - name: SimonSungm
   url: https://simonsungm.github.io
   src: life
+
 - name: Operating System course
   url: https://simonsungm.github.io/class/
-  src: course
+  src: life
+
 

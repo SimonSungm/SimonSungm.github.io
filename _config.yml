@@ -42,6 +42,10 @@ navs:
     href: /wiki/
     label: Wiki
 
+  - 
+    href: /course/
+    label: Course
+
   -
     href: /links/
     label: Links
@@ -49,6 +53,8 @@ navs:
   -
     href: /about/
     label: About
+
+
 
 # ---------------- #
 #       RSS        #
@@ -80,6 +86,10 @@ collections:
     wiki:
         output: true
         permalink: /wiki/:path/
+
+    course:
+        output: true
+        permalink: /course/:path/
 
 repository: SimonSungm/SimonSungm.github.io
 

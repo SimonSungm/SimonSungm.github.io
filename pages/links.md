@@ -16,7 +16,7 @@ permalink: /links/
   {% endif %}
 {% endfor %}
 
-> 友情链接
+> Links
 
 {% for link in site.data.links %}
   {% if link.src == 'www' %}
