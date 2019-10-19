@@ -4,7 +4,7 @@ title: Course
 keywords: Course
 comments: false
 menu: Course
-permalink: /course/
+permalink: /class/
 ---
 
 # Operating Systems: 2019 Fall/Winter
