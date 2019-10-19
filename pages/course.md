@@ -3,7 +3,7 @@ layout: post
 title: Course
 keywords: Course
 comments: false
-menu: Course
+menu: class
 permalink: /class/
 ---
 
