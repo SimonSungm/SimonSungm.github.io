@@ -36,8 +36,8 @@ The following text books are used in this class.
 The following books are highly recommended. Some chapters of these books may be discussed in the class.
 
 - [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- [Linux Kernel Development, 3rd Edition ](https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468)| [[Chinese Version](https://www.amazon.cn/dp/B004X3Z3D4)]
-- [A Guard to Kernel Exploitation: Attacking the Core](https://www.amazon.com/Guide-Kernel-Exploitation-Attacking-Core/dp/1597494860) | [[Chinese Version](https://book.douban.com/subject/10528448/)]
+- [Linux Kernel Development, 3rd Edition ](https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468) &#124; [[Chinese Version](https://www.amazon.cn/dp/B004X3Z3D4)]
+- [A Guard to Kernel Exploitation: Attacking the Core](https://www.amazon.com/Guide-Kernel-Exploitation-Attacking-Core/dp/1597494860) &#124; [[Chinese Version](https://book.douban.com/subject/10528448/)]
 
 #### Grading
 
