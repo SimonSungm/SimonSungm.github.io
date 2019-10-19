@@ -43,7 +43,7 @@ navs:
     label: Wiki
 
   - 
-    href: /course/
+    href: /class/
     label: Course
 
   -
@@ -89,7 +89,7 @@ collections:
 
     course:
         output: true
-        permalink: /course/:path/
+        permalink: /class/:path/
 
 repository: SimonSungm/SimonSungm.github.io
 
