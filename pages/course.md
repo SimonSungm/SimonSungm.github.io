@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Course
 keywords: Course
 comments: false
