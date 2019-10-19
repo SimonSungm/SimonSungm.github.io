@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "linux4riscv-1: Install GNU toolchain for RISC-V"
-categories: [Linux for RISC-V,Operating System Lab]
+categories: [Linux for RISC-V,Operating System Lab, Cross Compiler]
 description: Record of how to install GNU toolchain for RISC-V
 keywords: RISC-V, Opeating-System-Lab, GNU-Toolchain
 
