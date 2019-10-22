@@ -1,12 +1,14 @@
 ---
 layout: post
-title: QARMA encryption algorithm
+title: QARMA Encryption Algorithm
 categories: [Cryptography, Encryption Algorithm]
-description: QARMA encryption algorithm 
+description: QARMA Encryption Algorithm 
 keywords: QARMA, Encryption
 ---
 
-## What is QARMA
+## QARMA Encryption Algorithm
+
+### What is QARMA
 
 QARMA is an encryption algorithm propose by Roberto Avanzi, Qualcomm. The original paper of QARMA encryption algorithm can be found [here](https://eprint.iacr.org/2016/444.pdf). It's a **tweakable block ciphers**[^note2]  which is suitable be implemented by hardware. Different from AES, which is designed as a general-purpose algorithm, QARMA is a lightweight block ciphers motivated by the need to provide an acceptable security level for specific applications at much lower area, latency, or power consumption levels[^note1].  
 
@@ -14,7 +16,7 @@ QARMA supports block size of both n = 64 bits and n = 128 bits, denoted by QARMA
 
 
 
-## Specification of QARMA
+### Specification of QARMA
 
 In this section, I will introduce how QARMA works in detail.
 
@@ -52,7 +54,7 @@ $$
 
 
 
-## Reference
+### Reference
 
 [^note1]: [The QARMA Block Cipher Family](https://eprint.iacr.org/2016/444.pdf)
 [^note2]: https://link.springer.com/content/pdf/10.1007%2F3-540-45708-9_3.pdf
