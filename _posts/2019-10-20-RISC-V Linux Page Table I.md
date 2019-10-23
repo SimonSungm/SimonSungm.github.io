@@ -10,7 +10,7 @@ The RISC-V page table formats can be found in [`RISC-V Privileged ISA Specificat
 
 
 
-### Sv32 Implementation
+## Sv32 Implementation
 
 ![](/images/posts/riscv-page-table/Sv32.png)
 
@@ -36,7 +36,7 @@ Besides, different combinations of R, W and X bits also have special meanings.
 
 
 
-### Sv39 Implementation
+## Sv39 Implementation
 
 ![](/images/posts/riscv-page-table/Sv39-1.png)
 
@@ -50,7 +50,7 @@ And the other design of Sv39 follows the overall scheme of Sv32.
 
 
 
-### Sv48 Implementation
+## Sv48 Implementation
 
 ![](/images/posts/riscv-page-table/Sv48.png)
 
@@ -58,7 +58,7 @@ Sv48 supports 4-level page table and 512 GiB terapages besides 4 KiB pages, 2 Mi
 
 
 
-### Virtual Address Translation
+## Virtual Address Translation
 
 Virtual address is translated to physical address level by level. I briefly introduce this translation, the whole translation algorithm can be found in privileged ISA specification.
 
@@ -72,7 +72,6 @@ Virtual address is translated to physical address level by level. I briefly intr
 
 
 
-### Reference
+## Reference
 
 1. [RISC-V Privileged ISA Specification](https://riscv.org/specifications/privileged-isa/)
-

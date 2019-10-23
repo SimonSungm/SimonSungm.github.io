@@ -8,7 +8,7 @@ keywords: ARM64, Cross Compiler
 
 This is a record of how I cross compile Gcc 9.1 on Ubuntu 18.04.
 
-# Environment
+## Environment
 ### 1. Host Environment 
 
     host : Ubuntu 18.04
@@ -35,7 +35,7 @@ This is a record of how I cross compile Gcc 9.1 on Ubuntu 18.04.
 
 
 
-# Step
+## Step
 
 ### 1. Download Source
 You can download source files from following sites.
@@ -151,7 +151,7 @@ make install
 cd ..
 ```
 
-# Reference
+## Reference
 [1] [https://wiki.osdev.org/GCC_Cross-Compiler](https://wiki.osdev.org/GCC_Cross-Compiler)
 
 [2] [https://preshing.com/20141119/how-to-build-a-gcc-cross-compiler/](https://preshing.com/20141119/how-to-build-a-gcc-cross-compiler/)

@@ -11,8 +11,6 @@ Recently, my instructor decided to update the project of operating system course
 
 
 
-# Install GNU toolchain for RISC-V
-
 ## Download source code of riscv-gnu-toochain
 ```shell
 $ mkdir ~/Documents/linux4riscv
