@@ -38,7 +38,7 @@ Besides, different combinations of R, W and X bits also have special meanings.
 
 ### Sv39 Implementation
 
-![avatar](../images/posts/riscv-page-table/Sv39-1.png)
+![](/images/posts/riscv-page-table/Sv39-1.png)
 
 ![avatar](../images/posts/riscv-page-table/Sv39-2.png)
 
