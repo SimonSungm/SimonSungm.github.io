@@ -40,7 +40,7 @@ Besides, different combinations of R, W and X bits also have special meanings.
 
 ![](/images/posts/riscv-page-table/Sv39-1.png)
 
-![avatar](../images/posts/riscv-page-table/Sv39-2.png)
+![](/images/posts/riscv-page-table/Sv39-2.png)
 
 Sv39 implementation support 39-bit virtual address space, divided into 4 KiB pages. As the PTE of Sv39 has 8 bytes with highest 10 bits reserved and must be set to 0, there are only 512 rather than 1024 PTEs in one page.
 
