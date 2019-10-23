@@ -14,7 +14,7 @@ The RISC-V page table formats can be found in [`RISC-V Privileged ISA Specificat
 
 ![](/images/posts/riscv-page-table/Sv32.png)
 
-The page table format of Sv32 is as above[^note1]. The page size of Sv32 is 4 KiB, which is a popular page size. Thus,  It has a 12-bit long page offset. With each page table entry(**PTE**) being 4 bytes, each page table contains 1024 page table entries. The higher 20 bits of virtual address (virtual page number) is divide into two parts, VPN[0] and VPN[1], 10 bits each to support two-level page table. 
+The page table format of Sv32 is as above. The page size of Sv32 is 4 KiB, which is a popular page size. Thus,  It has a 12-bit long page offset. With each page table entry(**PTE**) being 4 bytes, each page table contains 1024 page table entries. The higher 20 bits of virtual address (virtual page number) is divide into two parts, VPN[0] and VPN[1], 10 bits each to support two-level page table. 
 
 The 20 bits virtual page number is translated into 22-bit physical page number via a two-level page table. You may wonder why physical page number is 2-bit longer than virtual page number. This is because the highest two bits are used by Physical Memory Protection (**PMP**). I will not introduce PMP here. And you may read the privileged ISA specification for details. In addition, Sv32 also supports 4 MiB megapages.
 
@@ -60,7 +60,7 @@ Sv48 supports 4-level page table and 512 GiB terapages besides 4 KiB pages, 2 Mi
 
 ### Virtual Address Translation
 
-Virtual address is translated to physical address level by level. I briefly introduce this translation, the whole translation algorithm can be found in privileged ISA specification[^note1].
+Virtual address is translated to physical address level by level. I briefly introduce this translation, the whole translation algorithm can be found in privileged ISA specification.
 
 1. Get the root page table from ***satp*** register's PPN field.
 2. Find a PTE use the first VPN field of virtual address as well as doing a PMA or PMP check, which may raise ***an access exception***.
@@ -74,4 +74,5 @@ Virtual address is translated to physical address level by level. I briefly intr
 
 ### Reference
 
-[^note1]:https://riscv.org/specifications/privileged-isa/)https://riscv.org/specifications/privileged-isa/
+1. [RISC-V Privileged ISA Specification(https://riscv.org/specifications/privileged-isa/)](https://riscv.org/specifications/privileged-isa/)
+
