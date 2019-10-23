@@ -6,15 +6,13 @@ description: Introduction to RISC-V Linux Page Table
 keywords: RISC-V, Page Table
 ---
 
-## RISC-V Linux Page Table I
-
 The RISC-V page table formats can be found in [`RISC-V Privileged ISA Specification`](https://riscv.org/specifications/privileged-isa/). Current RISC-V (**Document Version 20190608-Priv-MSU-Ratified**) supports three types of virtual memory, Sv32 for RV32, Sv39 and Sv48 for RV64, which supports 32-bit, 39-bit and 48-bit virtual address space respectively.
 
 
 
 ### Sv32 Implementation
 
-![avatar](../images/posts/riscv-page-table/Sv32.png)
+![](/images/posts/riscv-page-table/Sv32.png)
 
 The page table format of Sv32 is as above[^note1]. The page size of Sv32 is 4 KiB, which is a popular page size. Thus,  It has a 12-bit long page offset. With each page table entry(**PTE**) being 4 bytes, each page table contains 1024 page table entries. The higher 20 bits of virtual address (virtual page number) is divide into two parts, VPN[0] and VPN[1], 10 bits each to support two-level page table. 
 
@@ -34,7 +32,7 @@ The lower 10 bits of a page table entry encode the ***protection bits*** of this
 
 Besides, different combinations of R, W and X bits also have special meanings.
 
-![avatar](../images/posts/riscv-page-table/PTE bits.png)
+![](/images/posts/riscv-page-table/PTE bits.png)
 
 
 
@@ -54,7 +52,7 @@ And the other design of Sv39 follows the overall scheme of Sv32.
 
 ### Sv48 Implementation
 
-![avatar](../images/posts/riscv-page-table/Sv48.png)
+![](/images/posts/riscv-page-table/Sv48.png)
 
 Sv48 supports 4-level page table and 512 GiB terapages besides 4 KiB pages, 2 MiB megapages and 1 GiB gigapages. Sv48 implementation is much similar to Sv39 implementation, so I will not introduce it in details.
 
