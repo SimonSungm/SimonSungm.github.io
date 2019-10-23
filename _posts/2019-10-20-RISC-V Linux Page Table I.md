@@ -74,4 +74,5 @@ Virtual address is translated to physical address level by level. I briefly intr
 
 ## Reference
 
-1. [RISC-V Privileged ISA Specification](https://riscv.org/specifications/privileged-isa/)
+[1] [RISC-V Privileged ISA Specification](https://riscv.org/specifications/privileged-isa/)
+
