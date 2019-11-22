@@ -20,7 +20,7 @@ $ cd riscv-gnu-toolchain
 ```
 It may be too slow (50 KB/s) and too many problems(I downloaded it for a day, 我佛了), so I have uploaded it onto [浙大云盘](https://pan.zju.edu.cn/share/ad165bddc1b4cce7dbaa9d089e) (Only ZJU students are allowed).
 
-If you choose to download prebuilt compiler,  you can skip these three steps and go ahead to step Build qemu.
+If you choose to download a prebuilt compiler,  you can skip these three steps and go ahead to step Build qemu.
 
 ## Prerequisites
 
@@ -34,11 +34,11 @@ $ ./configure --prefix=/home/cliff/opt/riscv
 $ make
 ```
 
-Here we use /home/cliff/opt/riscv as default path of our toolchain. You can modify it as you like. It needs about 8GB spare space and take a long time to compile. So I have upload the binary onto [浙大云盘](https://pan.zju.edu.cn/share/ad165bddc1b4cce7dbaa9d089e) to reduce your workload. Now we can use riscv-unknow-elf-gcc to compile programs for RISC-V.
+Here we use /home/cliff/opt/riscv as default path of our toolchain. You can modify it as you like. It needs about 8GB spare space and takes a long time to compile. So I have uploaded the binary onto [浙大云盘](https://pan.zju.edu.cn/share/ad165bddc1b4cce7dbaa9d089e) to reduce your workload. Now we can use riscv64-unknow-elf-gcc to compile programs for RISC-V.
 
 ## Installation (Linux)
 
-**note:** this step is not necessary as we need to write our own operating system rather than just run program on the Linux. You can just skip this step. 
+**note:** this step is not necessary as we need to write our own operating system rather than just run a program on the Linux. You can just skip this step. 
 
 ```shell
 $ ./configure --prefix=/home/cliff/opt/riscv
@@ -49,7 +49,7 @@ We can find the compiler named riscv64-unknown-linux-gnu-gcc.
 
 ## Build qemu
 
-**Tips :** In this step, you may need to install some library. You can find related library package name you need use **sudo apt-cache search package-name** and then use **sudo apt install package-name**. For example, if you type sudo apt-cache search gcc, then you will get a series of package with a string of gcc in its name.
+**Tips: **In this step, you may need to install some library. You can find related library package name you need use **sudo apt-cache search package-name** and then use **sudo apt install package-name**. For example, if you type sudo apt-cache search gcc, then you will get a series of packages with a string of gcc in its name.
 
 ```shell
 $ cd qemu
