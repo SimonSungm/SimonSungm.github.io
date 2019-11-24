@@ -81,8 +81,8 @@ Students should check this schedule regularly as changes may happen without sepa
 | 0x08  | 10/28,10/31          | Synchronization Examples, Deadlock | Chapter 7,8 (OSC)           | [1](https://simonsungm.github.io/course/ppt/07_synchronization_examples.pdf) [2](https://simonsungm.github.io/course/ppt/08_deadlock.pdf) |
 | 0x09  | 11/4,11/7            | Exam Week, No Class                | -                           | -                                                            |
 | 0x0a  | 11/11,11/14          | Midterm Review                     |  Chapter 1-8 (OSC) |  [1](https://simonsungm.github.io/course/ppt/midterm_review1.pdf) [2](https://simonsungm.github.io/course/ppt/midterm_review2.pdf)  |
-| 0x0b  | 11/18,11/21          | Main memory                        | Chapter 9 (OSC)           |                                                         |
-| 0x0c  | 11/25,11/28          | Main memory                        | Chapter 9 (OSC)           | -                                                            |
+| 0x0b  | 11/18,11/21          | Main memory                        | Chapter 9 (OSC)           |          [1](https://simonsungm.github.io/course/ppt/09_mainmemory.pdf)                          |
+| 0x0c  | 11/25,11/28          | Main memory, Virtual memory        | Chapter 9 (OSC)           | -                                                            |
 | 0x0d  | 12/2,12/5            | Virtual memory                     | Chapter 10 (OSC)                   | -                                         |
 | 0x0e  | 12/9,12/12           | -             | -                            | -                                                            |
 | 0x0f  | 12/16,12/19          | -             | -                            | -                                                            |
