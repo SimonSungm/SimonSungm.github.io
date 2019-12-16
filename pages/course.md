@@ -83,9 +83,9 @@ Students should check this schedule regularly as changes may happen without sepa
 | 0x0a  | 11/11,11/14          | Midterm Review                     |  Chapter 1-8 (OSC)    |  [1](https://simonsungm.github.io/course/ppt/midterm_review1.pdf) [2](https://simonsungm.github.io/course/ppt/midterm_review2.pdf)  |
 | 0x0b  | 11/18,11/21          | Main memory                        | Chapter 9 (OSC)       |  [1](https://simonsungm.github.io/course/ppt/09_mainmemory.pdf)                          |
 | 0x0c  | 11/25,11/28          | Main memory, Virtual memory        | Chapter 9 (OSC)       |  [1](https://simonsungm.github.io/course/ppt/09_virtualmemory_linux.pdf)                              |
-| 0x0d  | 12/2,12/5            | Virtual memory                     | Chapter 10 (OSC)      |  [1](https://simonsungm.github.io/course/ppt/10_virtual_memory.pdf)                                          |
-| 0x0e  | 12/9,12/12           | -             | -                            | -                                                            |
-| 0x0f  | 12/16,12/19          | -             | -                            | -                                                            |
+| 0x0d  | 12/2,12/5            | Virtual memory                     | Chapter 10 (OSC)      |  [1](https://simonsungm.github.io/course/ppt/10_virtual_memory.pdf)                 |
+| 0x0e  | 12/9,12/12           | Mass storage                       | Chapter 11 (OSC)      |  [1](https://simonsungm.github.io/course/ppt/11_mass_storage.pdf)                  |
+| 0x0f  | 12/16,12/19          | IO systems                         | Chapter 12 (OSC)      |  [1](https://simonsungm.github.io/course/ppt/12_io.pdf)                            |
 | 0x10 | 12/23,12/26           | -             | -                            | -                                                            |
 | 0x11 | 12/30,1/2             | -             | -                            | -                                                            |
 | 0x12 | 1/6                   | -             | -                            | -                                                            |
