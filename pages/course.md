@@ -88,5 +88,4 @@ Students should check this schedule regularly as changes may happen without sepa
 | 0x0f  | 12/16,12/19          | IO systems                         | Chapter 12 (OSC)      |  [1](https://simonsungm.github.io/course/ppt/12_io.pdf)                            |
 | 0x10 | 12/23,12/26           | File systems	                    | Chapter 13-14 (OSC)   |  [1](https://simonsungm.github.io/course/ppt/13_fs_interface.pdf)   [2](https://simonsungm.github.io/course/ppt/14_fs_implementation.pdf)   [3](https://simonsungm.github.io/course/ppt/14_fs_in_practice.pdf)                                                              |
 | 0x11 | 12/30,1/2             | -             | -                            | -                                                            |
-| 0x12 | 1/6                   | -             | -                            | -                                                            |
 
