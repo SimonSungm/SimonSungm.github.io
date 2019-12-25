@@ -85,7 +85,7 @@ Students should check this schedule regularly as changes may happen without sepa
 | 0x0c  | 11/25,11/28          | Main memory, Virtual memory        | Chapter 9 (OSC)       |  [1](https://simonsungm.github.io/course/ppt/09_virtualmemory_linux.pdf)                              |
 | 0x0d  | 12/2,12/5            | Virtual memory                     | Chapter 10 (OSC)      |  [1](https://simonsungm.github.io/course/ppt/10_virtual_memory.pdf)                 |
 | 0x0e  | 12/9,12/12           | Mass storage                       | Chapter 11 (OSC)      |  [1](https://simonsungm.github.io/course/ppt/11_mass_storage.pdf)                  |
-| 0x0f  | 12/16,12/19          | IO systems                         | Chapter 12 (OSC)      |  [1](https://simonsungm.github.io/course/ppt/12_io.pdf)                            |
-| 0x10 | 12/23,12/26           | File systems	                    | Chapter 13-14 (OSC)   |  [1](https://simonsungm.github.io/course/ppt/13_fs_interface.pdf)   [2](https://simonsungm.github.io/course/ppt/14_fs_implementation.pdf)   [3](https://simonsungm.github.io/course/ppt/14_fs_in_practice.pdf)                                                              |
+| 0x0f  | 12/16,12/19          | IO systems, File systems           | Chapter 12-13 (OSC)   |  [1](https://simonsungm.github.io/course/ppt/12_io.pdf)   [2](https://simonsungm.github.io/course/ppt/13_fs_interface.pdf)         |
+| 0x10 | 12/23,12/26           | File systems	                    | Chapter 13-15 (OSC)   |  [1](https://simonsungm.github.io/course/ppt/14_fs_implementation.pdf)  [2](https://simonsungm.github.io/course/ppt/14_fs_in_practice.pdf) |
 | 0x11 | 12/30,1/2             | -             | -                            | -                                                            |
 
