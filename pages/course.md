@@ -87,5 +87,5 @@ Students should check this schedule regularly as changes may happen without sepa
 | 0x0e  | 12/9,12/12           | Mass storage                       | Chapter 11 (OSC)      |  [1](https://simonsungm.github.io/course/ppt/11_mass_storage.pdf)                  |
 | 0x0f  | 12/16,12/19          | IO systems, File systems           | Chapter 12-13 (OSC)   |  [1](https://simonsungm.github.io/course/ppt/12_io.pdf)   [2](https://simonsungm.github.io/course/ppt/13_fs_interface.pdf)         |
 | 0x10 | 12/23,12/26           | File systems	                    | Chapter 13-15 (OSC)   |  [1](https://simonsungm.github.io/course/ppt/14_fs_implementation.pdf)  [2](https://simonsungm.github.io/course/ppt/14_fs_in_practice.pdf) |
-| 0x11 | 12/30,1/2             | -             | -                            | -                                                            |
+| 0x11 | 12/30,1/2             | Review                             | -                 |  [1](https://simonsungm.github.io/course/ppt/final_review01.pdf)    [2](https://simonsungm.github.io/course/ppt/final_review02.pdf)    [3](https://simonsungm.github.io/course/ppt/final_review03.pdf)   [4](https://simonsungm.github.io/course/ppt/final_review04.pdf)    |
 
