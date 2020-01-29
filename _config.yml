@@ -42,9 +42,9 @@ navs:
     href: /wiki/
     label: Wiki
 
-  - 
-    href: /class/
-    label: Course
+#  - 
+#    href: /class/
+#    label: Course
 
   -
     href: /links/
