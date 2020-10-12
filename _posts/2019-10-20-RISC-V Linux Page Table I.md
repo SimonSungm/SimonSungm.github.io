@@ -16,7 +16,7 @@ The RISC-V page table formats can be found in [`RISC-V Privileged ISA Specificat
 
 The page table format of Sv32 is as above. The page size of Sv32 is 4 KiB, which is popular page size. Thus,  It has a 12-bit long page offset. With each page table entry(**PTE**) being 4 bytes, each page table contains 1024 page table entries. The higher 20 bits of virtual address (virtual page number) is divide into two parts, VPN[0] and VPN[1], 10 bits each to support a two-level page table. 
 
-The 20 bits virtual page number is translated into a 22-bit physical page number via a two-level page table. You may wonder why physical page number is 2-bit longer than virtual page number. This is because the highest two bits are used by Physical Memory Protection (**PMP**). I will not introduce PMP here. And you may read the privileged ISA specification for details. In addition, Sv32 also supports 4 MiB megapages.
+The 20 bits virtual page number is translated into a 22-bit physical page number via a two-level page table. In addition, Sv32 also supports 4 MiB megapages.
 
 The lower 10 bits of a page table entry encodes the ***protection bits*** of this page. The meaning of each bit is as follows:
 
